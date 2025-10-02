@@ -15,7 +15,7 @@ api_key = os.getenv("OPENAI_API_KEY")  # 환경 변수에서 API 키 가져오�
 #openai_api_key가져오기
 
 # 모델 초기화
-llm = ChatOpenAI(model="gpt-4o-mini")
+llm = ChatOpenAI(model_name="gpt-4o-mini")
 
 # 도구 함수 정의
 @tool
