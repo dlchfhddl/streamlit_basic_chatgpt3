@@ -64,7 +64,7 @@ def get_ai_response(messages):
 
 
 # Streamlit 앱
-st.title("💬 GPT-4o CHATBOT-4조 김재현 이초롱")
+st.title("💬 Chatbot-4조 김재현,이초롱")
 
 # 스트림릿 session_state에 메시지 저장
 if "messages" not in st.session_state:
