@@ -1,5 +1,5 @@
 import streamlit as st
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage, ToolMessage
 
 from langchain_core.tools import tool
@@ -15,7 +15,7 @@ api_key = os.getenv("OPENAI_API_KEY")  # 환경 변수에서 API 키 가져오�
 #openai_api_key가져오기
 
 # 모델 초기화
-llm = ChatOpenAI(model_name="gpt-4o-mini")
+llm = ChatOpenAI(model="gpt-4o-mini")
 
 # 도구 함수 정의
 @tool
@@ -64,7 +64,7 @@ def get_ai_response(messages):
 
 
 # Streamlit 앱
-st.title("💬 GPT-4o Langchain Chat")
+st.title("💬 GPT-4o CHATBOT-4조 김재현 이초롱")
 
 # 스트림릿 session_state에 메시지 저장
 if "messages" not in st.session_state:
